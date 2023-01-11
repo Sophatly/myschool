@@ -62,7 +62,7 @@
 
         <li class="treeview {{ ($prefix == '/setups')?'active':''}}">
           <a href="#">
-            <i data-feather="monitor"></i> <span>Setup Management</span>
+            <i data-feather="settings"></i> <span>Setup Management</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
@@ -83,7 +83,7 @@
 
         <li class="treeview {{ ($prefix == '/students')?'active':''}}">
           <a href="#">
-            <i data-feather="monitor"></i><span>Student Management</span>
+            <i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i><span>Student Management</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
@@ -94,6 +94,35 @@
             <li><a href="{{route('registration.fee')}}"><i class="ti-more"></i>Registration Fee</a></li>
             <li><a href="{{route('monthly.fee.view')}}"><i class="ti-more"></i>Monthly Fee</a></li>
             <li><a href="{{route('exam.fee.view')}}"><i class="ti-more"></i>Exam Fee</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview {{ ($prefix == '/employees')?'active':''}}">
+          <a href="#">
+            <i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i><span>Employee Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('employee.reg.view')}}"><i class="ti-more"></i>Employee Registration</a></li>
+            <li><a href="{{route('employee.salary.view')}}"><i class="ti-more"></i>Employee Salary</a></li>
+            <li><a href="{{route('employee.leave.view')}}"><i class="ti-more"></i>Employee Leave</a></li>
+            <li><a href="{{route('employee.attendance.view')}}"><i class="ti-more"></i>Employee Attendance</a></li>
+            <li><a href="{{route('employee.monthly.salary')}}"><i class="ti-more"></i>Employee Monthly Salary</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview {{ ($prefix == '/marks')?'active':''}}">
+          <a href="#">
+            <i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i><span>Marks Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('marks.entry.add')}}"><i class="ti-more"></i>Marks Entry</a></li>
+            
           </ul>
         </li>
 		
